@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+class PostModel(models.Model):
+
+    title = models.CharField(max_length = 100)
+    dateOfPost = models.DateField()
+    description = models.CharField(max_length = 1000)
